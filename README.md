@@ -1,4 +1,4 @@
 # influencer-products
 Live site Link: https://amena-hira.github.io/influencer-products/
-Full website is designed by html and css. Also, it's responsive for mobile and laptop device.
+.The entire website is designed with html and css. Also, it's responsive for mobile and laptop devices
 Thanks for watching.
