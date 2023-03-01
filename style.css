@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+/* header style */
+.header-container {
+    width: 90%;
+    margin: 0 auto;
+    /* border: 1px solid; */
+}
+
+.mobile-menu,
+.mobile-cart {
+    display: none;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #3A3A3A;
+    margin-left: 34px;
+    font-size: 16px;
+}
+
+.fa-solid {
+    color: black;
+}
+
+.influencer-journey {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.influencer-info,
+.influencer-img {
+    width: 50%;
+}
+
+.influencer-info h1 {
+    font-weight: 700;
+    font-size: 52px;
+    margin: 0;
+}
+
+.influencer-info p {
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.btn {
+    background: #E02C6D;
+    border-radius: 41px;
+    padding: 10px 24px;
+    border: none;
+    color: white;
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.btn i {
+    color: white;
+    margin-left: 8px;
+}
+
+.influencer-img {
+    display: flex;
+    justify-content: end;
+    margin-top: 50px;
+}
+
+.influencer-img div {
+    position: relative;
+}
+
+.camera {
+    position: absolute;
+    left: 0;
+    top: 31px;
+}
+
+/* responsive style */
+@media screen and (max-width: 576px) {
+    .header-container {
+        width: 100%;
+    }
+
+    .mobile-menu,
+    .mobile-cart {
+        display: block;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .mobile-menu {
+        padding-left: 0;
+    }
+
+    .mobile-menu li {
+        list-style: none;
+    }
+
+    .menu-bar:hover .submenu {
+        display: block;
+    }
+
+    .submenu {
+        display: none;
+    }
+
+    .submenu {
+        position: absolute;
+        background-color: rgba(224, 44, 109, 0.2);
+        padding: 10px 20px;
+        border-radius: 8px;
+    }
+
+    .submenu li a {
+        text-decoration: none;
+        color: #3A3A3A;
+        font-size: 16px;
+
+    }
+
+    .influencer-journey {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .influencer-info,
+    .influencer-img {
+        width: 100%;
+        text-align: center;
+    }
+    .influencer-info h1{
+        font-size: 28px;
+    }
+    .influencer-info p{
+        font-size: 14px;
+        font-weight: 500;
+        width: 80%;
+        margin: 0 auto;
+        padding: 16px 0px;
+    }
+    .influencer-img{
+        margin-top: 0;
+    }
+    .circle{
+        width: 100%;
+    }
+    .camera {
+        width: 90%;
+        left: 9px;
+        top: 30px;
+    }
+}
