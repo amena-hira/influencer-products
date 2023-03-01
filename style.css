@@ -2,6 +2,7 @@
 
 body {
     font-family: 'Poppins', sans-serif;
+    background: rgba(170, 170, 170, 0.1);
 }
 
 /* header style */
@@ -101,8 +102,54 @@ body {
     padding: 34px 61px;
     border-style: solid;
     border-width: 1px;
-    border-image: linear-gradient(to left, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%) 100% 0 ;
+    border-image: linear-gradient(to left, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%) 100% 0;
 
+}
+
+/* Popular Collections */
+.collection-container {
+    width: 75%;
+    margin: 100px auto;
+}
+
+.collection-container h2 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.collections {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.collection {
+    padding: 17px 14px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+}
+
+.collection-info h3 {
+    font-size: 28px;
+    margin: 16px 0 ;
+    color: #18191F;
+}
+
+.collection-info h4 {
+    font-weight: 400;
+    font-size: 24px;
+    margin: 16px 0;
+    color: rgba(0, 0, 0, 0.87);
+}
+.rating-icon i{
+    color: #FB8200;
+}
+.collection-info p{
+    font-weight: 700;
+    font-size: 14px;
+    color: #787885;
+    margin: 8px 0;
 }
 
 /* responsive style */
@@ -186,7 +233,8 @@ body {
         left: 9px;
         top: 30px;
     }
-    .companies{
+
+    .companies {
         margin: 50px 0;
         width: 100%;
         flex-wrap: wrap;
@@ -196,10 +244,22 @@ body {
         padding: 0;
         border: none;
     }
-    .company{
+
+    .company {
         width: 18%;
     }
-    .company img{
+
+    .company img {
+        width: 100%;
+    }
+    .collection-container {
+        width: 100%;
+    }
+    .collections{
+        grid-template-columns: repeat(1,1fr);
+        gap: 10px;
+    }
+    .collection img{
         width: 100%;
     }
 }
